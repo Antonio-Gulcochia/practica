@@ -19,5 +19,12 @@ class Usuario extends Model
     {
         return $this->hasMany(Reserva::class);
     }
+
+    // Relación uno a muchos con Resena
+    public function resenas()
+    {
+        return $this->hasMany(Resena::class);
+    }
 }
+
 
